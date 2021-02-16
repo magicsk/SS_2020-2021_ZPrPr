@@ -1,0 +1,9 @@
+*
+!*.c
+!*.md
+!*.sh
+!*.json
+!*.txt
+!*.pdf
+!LICENSE
+!.vscode
