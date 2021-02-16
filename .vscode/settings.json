@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.tcc": "c",
+        "*.ipp": "c",
+        "bitset": "c",
+        "optional": "c",
+        "algorithm": "c",
+        "random": "c",
+        "istream": "c",
+        "numeric": "c",
+        "ranges": "c",
+        "streambuf": "c",
+        "valarray": "c",
+        "tuple": "c"
+    }
+}
