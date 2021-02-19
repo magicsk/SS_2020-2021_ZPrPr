@@ -2,14 +2,17 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: gcc-9 build active file",
+            "label": "C/C++: gcc build active file",
             "command": "/usr/bin/gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-lm"
+                "-lm",
+                "-std=c99",
+                "-pedantic",
+                "-Wall"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

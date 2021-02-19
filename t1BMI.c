@@ -1,7 +1,7 @@
 // created by Rastislav Brna
-// Licence is available on https://github.com/magicsk/ex02
+// Source: https://github.com/magicsk/SS_2020-2021_ZPrPr
 // IDE: Visual Studio Code
-// Compiler: gcc-7  args:-lm
+// Compiler: gcc  args: -lm -std=c99
 
 #include <stdio.h>
 #include <math.h>

@@ -1,7 +1,7 @@
 // created by Rastislav Brna
 // Licence is available on https://github.com/magicsk/ex03
 // IDE: Visual Studio Code
-// Compiler: gcc-9  args:-lm -fno-stack-protector
+// Compiler: gcc  args: -lm -std=c99-fno-stack-protector
 
 #include <stdio.h>
 #include <math.h>
