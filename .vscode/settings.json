@@ -13,6 +13,10 @@
         "streambuf": "c",
         "valarray": "c",
         "tuple": "c",
-        "functional": "c"
-    }
+        "functional": "c",
+        "type_traits": "c"
+    },
+    "cSpell.words": [
+        "znak"
+    ]
 }
