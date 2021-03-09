@@ -12,6 +12,7 @@
         "ranges": "c",
         "streambuf": "c",
         "valarray": "c",
-        "tuple": "c"
+        "tuple": "c",
+        "functional": "c"
     }
 }
