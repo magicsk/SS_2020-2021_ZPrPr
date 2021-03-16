@@ -14,9 +14,12 @@
         "valarray": "c",
         "tuple": "c",
         "functional": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "chrono": "c",
+        "limits": "c"
     },
     "cSpell.words": [
+        "ptwo",
         "znak"
     ]
 }
