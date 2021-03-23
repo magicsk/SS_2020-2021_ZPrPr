@@ -9,8 +9,8 @@ int main() {
     FILE* first;
     FILE* second;
 
-    first = fopen("./first.txt", "r");
-    second = fopen("./second.txt", "r");
+    first = fopen("./t3.3First.txt", "r");
+    second = fopen("./t3.3Second.txt", "r");
 
     if (first != NULL || second != NULL) {
         char charfirst;

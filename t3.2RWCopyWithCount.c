@@ -9,7 +9,7 @@ int main() {
     FILE* file;
     FILE* numbers;
 
-    file = fopen("./input.txt", "r");
+    file = fopen("./t3.2Input.txt", "r");
 
     if (file != NULL) {
         char temp[256];
@@ -17,7 +17,7 @@ int main() {
             temp[i] = 0;
         }
 
-        numbers = fopen("./numbers.txt", "a");
+        numbers = fopen("./t3.2Numbers.txt", "a");
         while (fscanf(file, "%s", temp) != EOF) {
             int lowercase = 0;
             for (int i = 0; i < 256; i++){

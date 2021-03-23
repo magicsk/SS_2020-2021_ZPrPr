@@ -8,7 +8,6 @@
 
 int main(){
     int n3;
-    // int n[malloc(sizeof int)];
     int* np;
     np = (int*) malloc(2*sizeof(int));
 

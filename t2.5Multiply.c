@@ -9,7 +9,7 @@ int main(){
     float x;
     FILE *file;
 
-    file = fopen("./nasobky.txt", "w");
+    file = fopen("./t2.5Multipliers.txt", "w");
 
     printf("Enter nubmer:\n");
     scanf("%f", &x);

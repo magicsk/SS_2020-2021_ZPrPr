@@ -8,7 +8,7 @@
 int main(){
     FILE *file;
 
-    file = fopen("./text.txt", "r");
+    file = fopen("./t2.6Text.txt", "r");
 
     if (file != NULL){
         char temp;

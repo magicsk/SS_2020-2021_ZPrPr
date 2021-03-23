@@ -13,13 +13,13 @@ int main() {
     printf("Enter character:\n");
     input = getchar();
 
-    file = fopen("./znak.txt", "r");
+    file = fopen("./t3.1Char.txt", "r");
 
     if (file != NULL) {
         char temp[90];
 
         if (input == 115 || input == 83) {
-            new = fopen("./new.txt", "w");
+            new = fopen("./t3.1New.txt", "w");
             while (fscanf(file, "%s", temp) != EOF) {
                 fprintf(new, "%s\n", temp);
             }
