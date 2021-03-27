@@ -13,15 +13,15 @@ int main(){
     int *ptwo;
     int *temp;
 
-    pone = one;
-    ptwo = two;
+    pone = &one;
+    ptwo = &two;
 
-    printf("%d %d\n", pone, ptwo);
+    printf("%d %d\n", *pone, *ptwo);
 
     temp = ptwo;
     ptwo = pone;
     pone = temp;
 
-    printf("%d %d\n", pone, ptwo);
+    printf("%d %d\n", *pone, *ptwo);
     return 0;
 }

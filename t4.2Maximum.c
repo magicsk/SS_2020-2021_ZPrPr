@@ -17,11 +17,11 @@ int main(){
     int one = 69;
     int two = 420;
 
-    int *pone = one;
-    int *ptwo = two;
+    int *pone = &one;
+    int *ptwo = &two;
 
-    printf("%d %d\n", pone, ptwo);
+    printf("%d %d\n", *pone, *ptwo);
 
-    printf("%d\n", max(pone, ptwo));
+    printf("%d\n", *max(pone, ptwo));
     return 0;
 }

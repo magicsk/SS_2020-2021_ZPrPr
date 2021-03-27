@@ -22,7 +22,7 @@ int prime(int n) {
     }
 }
 
-int divide(int* pone, int* ptwo) {
+void divide(int* pone, int* ptwo) {
     // printf("%d %d\n", *pone, *ptwo);
     for (int i = 2; i < 100; i++) {
         int p = prime(i);
@@ -49,7 +49,6 @@ int divide(int* pone, int* ptwo) {
             }
         }
     }
-    return 0;
 }
 
 int main() {
@@ -59,11 +58,11 @@ int main() {
     printf("Enter two numbers separated by space: ");
     scanf("%d %d", &one, &two);
 
-    int* pone = one;
-    int* ptwo = two;
+    int* pone = &one;
+    int* ptwo = &two;
 
 
-    divide(&pone, &ptwo);
-    printf("Reduced fraction %d/%d\n", pone, ptwo);
+    divide(pone, ptwo);
+    printf("Reduced fraction %d/%d\n", *pone, *ptwo);
     return 0;
 }
