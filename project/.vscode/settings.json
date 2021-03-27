@@ -16,7 +16,9 @@
         "functional": "c",
         "type_traits": "c",
         "chrono": "c",
-        "limits": "c"
+        "limits": "c",
+        "typeindex": "c",
+        "typeinfo": "c"
     },
     "cSpell.words": [
         "ptwo",
