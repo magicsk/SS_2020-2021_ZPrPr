@@ -12,7 +12,8 @@
                 "-lm",
                 "-std=c99",
                 "-pedantic",
-                "-Wall"
+                "-Wall",
+                "-I./include"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
