@@ -88,21 +88,21 @@ void menu(FILE** goods, FILE** suppliers, int** goodsL, int** suppliersL, char**
 }
 
 int main() {
-    FILE* goods;
-    FILE* suppliers;
+    FILE* goods = NULL;
+    FILE* suppliers = NULL;
 
     int* goodsL;
     int* suppliersL;
 
-    char** name;
-    int* stock;
-    double* price;
-    double* weight;
-    int* goodsSupplierID;
+    char** name = NULL;
+    int* stock = NULL;
+    double* price = NULL;
+    double* weight = NULL;
+    int* goodsSupplierID = NULL;
 
-    int* supplierID;
-    char** supplierName;
-    char** supplierAddress;
+    int* supplierID = NULL;
+    char** supplierName = NULL;
+    char** supplierAddress = NULL;
 
     menu(&goods, &suppliers, &goodsL, &suppliersL, &name, &stock, &price, &weight, &goodsSupplierID, &supplierID, &supplierName, &supplierAddress);
     return 0;
