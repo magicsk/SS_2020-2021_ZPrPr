@@ -25,8 +25,8 @@ void k(FILE** goods, FILE** suppliers, int** goodsL, int** suppliersL, char*** n
         free(*supplierName);
         free(*supplierAddress);
     }
-    fclose(*goods);
-    fclose(*suppliers);
+    if (*goods != NULL) fclose(*goods);
+    if (*suppliers != NULL) fclose(*suppliers);
     exit(0);
 }
 
