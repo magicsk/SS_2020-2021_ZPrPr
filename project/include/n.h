@@ -1,13 +1,22 @@
-void menu();
-
-void v(FILE** goods, FILE** suppliers, int** goodsLP, int** suppliersLP, char*** name, int** stock, double** price, double** weight, int** goodsSupplierID, int** supplierID, char*** supplierName, char*** supplierAddress) {
+void n(FILE** goods, FILE** suppliers, int** goodsLP, int** suppliersLP, char*** name, int** stock, double** price, double** weight, int** goodsSupplierID, int** supplierID, char*** supplierName, char*** supplierAddress) {
     int goodsL, suppliersL;
 
-    *goods = fopen("./goods.txt", "r");
-    *suppliers = fopen("./suppliers.txt", "r");
+    // deallocation
+    if (*stock != NULL) {
+        free(*name);
+        free(*stock);
+        free(*price);
+        free(*weight);
+        free(*goodsSupplierID);
+        free(*supplierID);
+        free(*supplierName);
+        free(*supplierAddress);
+    }
 
     // goods.txt
     if (*goods != NULL) {
+        rewind(*goods);
+
         *name = (char**)malloc(50 * 50 * sizeof(char));
         for (int i = 0; i < 50; i++) {
             (*name)[i] = (char*)malloc(50 * sizeof(char));
@@ -27,20 +36,14 @@ void v(FILE** goods, FILE** suppliers, int** goodsLP, int** suppliersLP, char***
             fscanf(*goods, "%d", &(*goodsSupplierID)[goodsL++]);
         }
 
-        *goodsLP = (int*)malloc(sizeof(int));
         *goodsLP = &goodsL;
-
-        for (int i = 0; i < goodsL; i++) {
-            printf("Name of goods: %s\nItems in stock: %2d\nPrice: %5.2lf\nWeight: %4.4lf\nSuplier ID: %2d\n\n", name[0][i], stock[0][i], price[0][i], weight[0][i], goodsSupplierID[0][i]);
-        }
-    } else {
-        printf("Unable to open file goods.txt!\n");
+        // printf("%d", **goodsLP); // 4
     }
-
-    printf("----------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------\n");
 
     // suppliers.txt
     if (*suppliers != NULL) {
+        rewind(*suppliers);
+
         *supplierID = (int*)malloc(50 * sizeof(int));
         *supplierName = (char**)malloc(50 * 50 * sizeof(char));
         for (int i = 0; i < 50; i++) {
@@ -60,13 +63,6 @@ void v(FILE** goods, FILE** suppliers, int** goodsLP, int** suppliersLP, char***
         }
 
         *suppliersLP = &suppliersL;
-
-        for (int i = 0; i < suppliersL; i++) {
-            printf("Suplier ID: %2d\nSuplier name: %s\nSuplier address: %s\n\n", supplierID[0][i], supplierName[0][i], supplierAddress[0][i]);
-        }
-    } else {
-        printf("Unable to open file suppliers.txt!\n");
     }
-    getchar();
     menu(goods, suppliers, goodsLP, suppliersLP, name, stock, price, weight, goodsSupplierID, supplierID, supplierName, supplierAddress);
 }
