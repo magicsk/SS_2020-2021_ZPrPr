@@ -21,7 +21,11 @@
         "typeinfo": "c",
         "variant": "c",
         "string": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "cstring": "c",
+        "hash_map": "c",
+        "unordered_map": "c",
+        "unordered_set": "c"
     },
     "cSpell.words": [
         "ptwo",
