@@ -18,7 +18,10 @@
         "chrono": "c",
         "limits": "c",
         "typeindex": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "variant": "c",
+        "string": "c",
+        "string_view": "c"
     },
     "cSpell.words": [
         "ptwo",
