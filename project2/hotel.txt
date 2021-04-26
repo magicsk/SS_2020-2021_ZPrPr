@@ -1,0 +1,51 @@
+---
+203
+1
+103.52
+#
+Michal Novak
+Malinova 97, Bratislava
+20210114
+20210119
+---
+105
+2
+323.00
+#
+Tomas Kovac
+Jahodova 3, Bratislava
+20210204
+20210302
+#
+Lucia Kovacova
+Jahodova 3, Bratislava
+20210204
+20210302
+---
+200
+3
+698.68
+#
+Peter Fesny
+Hrad 52, Bratislava
+20210424
+20210425
+#
+Michal Smutny
+Velka 15, Trnava
+20210536
+20210529
+#
+Anna Falosna
+Falosna 69, Falosne
+20210630
+20210706
+---
+1241
+4
+145134.31
+#
+PhDr. Ronal Richard Ogdenvel
+Sedmokraskova 695, Roznava
+20210524
+20210429

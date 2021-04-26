@@ -8,6 +8,6 @@
 !*.pdf
 !LICENSE
 !.vscode
-!project
+!project*
 !include
 !Makefile

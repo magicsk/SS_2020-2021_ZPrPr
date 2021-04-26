@@ -42,7 +42,7 @@ void menu(FILE** goods, FILE** suppliers, int** goodsL, int** suppliersL, char**
     printf("[p] Change the stock of an item\n");
     printf("[z] List items by size from interval <x, y>\n");
     printf("----------\n");
-    printf("[k]Exit\n");
+    printf("[k] Exit\n");
     printf("Enter a command: ");
 
     scanf("%c", &command);
